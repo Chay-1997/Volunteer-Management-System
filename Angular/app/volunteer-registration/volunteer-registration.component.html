@@ -1,0 +1,56 @@
+<div class="cd">
+<div class="container">
+    <div class="col-md-6 mx-auto text-center">
+       <div class="header-title">
+          <h1 class="wv-heading--title">
+            Get Yourself Registerd
+          </h1>
+          <h2 class="wv-heading--subtitle">
+             Get Going Here
+          </h2>
+       </div>
+    </div>
+    <div class="row">
+       <div class="col-md-4 mx-auto">
+          <div class="myform form ">
+             {{message}}
+             <form action="" method="post" name="login">
+                <div class="form-group">
+                   <input type="text" [(ngModel)]="ve.volunteername"  name="name" id="name" class="form-control my-input"  placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" [(ngModel)]="ve.age" name="age" id="age" class="form-control my-input"  placeholder="Age">
+                 </div>
+                 <div class="form-group">
+                    <input type="text" [(ngModel)]="ve.qualification" name="qualification" id="qualification" class="form-control my-input" placeholder="Qualification">
+                 </div>
+                 <div class="form-group">
+                    <input type="email"  [(ngModel)]="ve.email" name="email" id="email" class="form-control my-input"  placeholder="Email">
+                 </div>
+                <div class="form-group">
+                   <input type="text"  [(ngModel)]="ve.address"  name="address" id="address" class="form-control my-input" placeholder="Address">
+                </div>
+                <div class="form-group">
+                   <input type="number" [(ngModel)]="ve.mobilenumber" min="0" name="mobilenumber" id="mobilenumber"  class="form-control my-input" placeholder="Phone Numnber">
+                </div>
+                <div class="form-group">
+                    <input  type="text" id='ex' [(ngModel)]="ve.eventnameregistered" placeholder="Event To Register" [ngModelOptions]="{standalone: true}" class="form-control my-input">
+                 </div>
+                 <!-- <p>{{event}}</p> -->
+                 
+                <div class="text-center ">
+                   <button type="submit" class=" btn btn-block send-button tx-tfm" (click)="Register()">Register</button>
+                </div>
+                <div class="col-md-12 ">
+                   <div class="login-or">
+                      <hr class="hr-or">
+                      
+                   </div>
+                </div>
+                
+             </form>
+          </div>
+       </div>
+    </div>
+  </div>
+</div>

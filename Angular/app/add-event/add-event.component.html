@@ -1,0 +1,61 @@
+<div class="bs">
+<div class="container">
+    <div class="col-md-6 mx-auto text-center">
+       <div class="header-title">
+          <h2 class="wv-heading--title">
+            Add Event Details 
+          </h2>
+          <h4 class="wv-heading--subtitle">
+             Get Going Here
+          </h4>
+       </div>
+    </div>
+    <div class="row">
+       <div class="col-md-4 mx-auto">
+          <div class="myform form ">
+             
+             <form action="" method="post" name="login">
+
+                <div class="form-group">
+                Event Name:
+                   <input type="text" [(ngModel)]="es.event_name"  name="event_name" id="event_name" class="form-control my-input"  placeholder="Event Name">
+                </div>
+                <div class="form-group">
+                    Address:
+                    <input type="text" [(ngModel)]="es.address" name="address" id="address" class="form-control my-input"  placeholder="Address">
+                </div>
+                City:
+                 <div class="form-group">
+                    <input type="text" [(ngModel)]="es.city" name="city" id="city" class="form-control my-input" placeholder="City">
+                 </div>
+                 Date Of Event:
+                 <div class="form-group">
+                    <input type="text"  [(ngModel)]="es.date_of_event" name="date_of_event" id="date_of_event" class="form-control my-input"  placeholder="yyyy-mm-dd">
+                 </div>
+                 Time Of Event:
+                <div class="form-group">
+                   <input type="text"  [(ngModel)]="es.time"  name="time" id="time" class="form-control my-input" >
+                </div>
+                Number Of Volunteers Required:
+                <div class="form-group">
+                   <input type="number" [(ngModel)]="es.no_of_volunteers_required" min="0" name="no_of_volunteers_required" id="no_of_volunteers_required"  class="form-control my-input">
+            </div>
+                 <!-- <p>{{event}}</p> -->
+                 
+                <div class="text-center ">
+                   <button type="submit" class="btn-primary" (click)="Add()">Add</button>
+                </div>
+                <div class="col-md-12 ">
+                   <div class="login-or">
+                      <hr class="hr-or">
+                      
+                   </div>
+                </div>
+                
+             </form>
+          </div>
+       </div>
+    </div>
+  </div>
+
+</div>

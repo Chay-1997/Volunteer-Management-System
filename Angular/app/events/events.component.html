@@ -1,0 +1,42 @@
+
+
+
+<div class="ask">
+<div class="container">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <br>
+
+    Search Here To :   <input type="text"  [(ngModel)]="searchKey" placeholder="Enter The Event Name" (keyup)="checking()"/>
+        <br>
+        <br>
+    <table class="table table-striped">
+    <thead>
+        <tr >
+            <td>Event Name</td>
+            
+            <td><button id="btn2" (click)="sortOnCity()">{{btnCity}}</button></td>
+            <td><button id="btn1" (click)="sortOnDate()">{{btnDate}}</button></td>
+            <td>Time</td>
+            <td>No Of Volunteers Required</td>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let er of e">
+            <td>{{er.event_name}}</td>
+            <td>{{er.city}}</td>
+            <td>{{er.date_of_event}}</td>
+            <td>{{er.time}}</td>
+            <td *ngIf="ifItsAdmin">{{er.no_of_volunteers_required}}</td>
+            
+           
+            <td><button  *ngIf="ifItIsVolunteer" class="btn btn-danger" (click)="registerWithThisEvent(er.event_name)">Register</button></td> 
+           
+
+        </tr>
+    </tbody>
+</table> 
+
+    </div> 
+</div>
+</div>   
